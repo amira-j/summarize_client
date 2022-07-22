@@ -1,0 +1,24 @@
+{
+    "models": [
+        {
+            "name": "fast",
+            "description": "This uses the currently loaded model.",
+            "path": null
+        },
+        {
+            "name": "Pegasus",
+            "description": "Pegasus is a model developed by Google. It is a transformer. The encoder is pretrained by masking tokens, the decoder is pretrained by masking whole sentences.",
+            "path": "../pegasus/model/pegasus_pipeline.pt"
+        },
+        {
+            "name": "DistilBART",
+            "description": "This is a BART-model. The decoder is distilled from 12 to 6 layers.",
+            "path":"../pegasus/model/default_pipeline.pt"
+        },
+        {
+            "name": "Dialogue-BART",
+            "description": "This is a BART-model that was trained afterwards on a dialogue-dataset.",
+            "path":"../pegasus/model/bart_pipeline.pt"
+        }
+    ]
+}
